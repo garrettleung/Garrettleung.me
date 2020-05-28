@@ -1,12 +1,14 @@
 <html>
 
 <head>
-    <title>Happy Mother's Day</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Garrett Leung</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="css/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&amp;display=swap" rel="stylesheet">
-    <script type="text/javascript" src="assets/scripts/script.js"></script>
+    <script type="text/javascript" src="js/typewriter.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <link id="avast_os_ext_custom_font"
         href="chrome-extension://mbckjcfnjmoiinpgddefodcighgikkgn/common/ui/fonts/fonts.css" rel="stylesheet"
         type="text/css">
@@ -39,8 +41,16 @@
             <img src="assets/pics/duck.jpg" class="duck">         
         </div>
     </div>
+    <div id = section_contentContainer></div>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="js/section_contentContainer.js"></script>
 
     <script src="js/aos.js"></script>
+
     <script type="text/javascript">
         AOS.init({
             duration: 1200,
