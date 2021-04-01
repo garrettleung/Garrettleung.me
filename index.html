@@ -4,14 +4,13 @@
     <title>Garrett Leung</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="css/aos.css" />
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&amp;display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/typewriter.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    <link id="avast_os_ext_custom_font"
-        href="chrome-extension://mbckjcfnjmoiinpgddefodcighgikkgn/common/ui/fonts/fonts.css" rel="stylesheet"
-        type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0">
@@ -23,22 +22,33 @@
             <img src="assets/logos/github.svg" alt="github logo" class="top_logo">
         </a>
     </div>
-    <div class="intro">
-        <h1 class="title">
-            Hi, I'm Garrett, a
-        </h1>
-        <div class="typewrite" data-period="500"
-            data-type='[ "Student.", "Tutor.", "Frisbee player.", "Coach.", "Software Developer.", "Foodie."]'>
-            <span class="wrap"></span>
+    <div id="intro">
+        <div id="titleDiv"></div>
+            <h1 id="title">
+                Hi, I'm
+            </h1>
+            <h1 id="name"> 
+                Garrett Leung
+            </h1>
         </div>
-        <div class="about">
-            <div class=aboutText>
-                <h2 class="aboutTitle">
-                    About me
-                </h2>  
-                I'm currently a student at the University of Washington majoring in Engineering (Intended Computer engineering)
-            </div>    
-            <img src="assets/pics/duck.jpg" class="duck">         
+        <div id="IAmA">
+            <h1 id="IAm">I am </h1>
+            <h1 class="typewrite" data-period="500"
+                data-type='[ "a student.", "a mentor.", "a coach.", "a software developer.", "a foodie.", "an electrical engineer", "a computer engineer"]'>
+                <span class="wrap"></span>
+            </h1>
+        </div>
+        <div class="aboutBox aboutBox-2">
+        </div>
+        <div id="about">
+            <div id="aboutTitle">
+                About me
+            </div>  
+            <div id=aboutText>
+                I'm currently a student at the University of Washington majoring in electrical and computer engineering
+            </div>          
+        </div>
+        <div class="aboutBox aboutBox-1">
         </div>
     </div>
     <div id = section_contentContainer></div>

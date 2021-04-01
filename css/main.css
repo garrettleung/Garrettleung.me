@@ -1,8 +1,9 @@
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: #FFFFFF;
-    color: #107896;
+    font-family: 'Noto Serif JP', serif;
+    background-color: #29334D;
+    color: #FFFBFB;
     margin: 0px;
+    font-weight: 200;
   }
   
   
@@ -35,9 +36,8 @@ body {
   }
   
   /* Front Page Body */
+
   .intro{
-    margin-left: 15%;
-    margin-right: 15%;
   }
   
   h1 {
@@ -48,214 +48,82 @@ body {
     line-height: 1.4em;
     animation: fadein 1.2s ease-in;
   }
+
+  #titleDiv{
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
   
   .typewrite {
-    font-size: 48px;
+    font-size: 36;
     margin-bottom: 50px;
     animation: fadein 1.4s ease-in;
+    display: inline;
+    margin-left: 0;
   }
 
-  .aboutTitle {
-    font-size: 42;
-  }
-  
-  .aboutText {
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
+  #title {
+    font-size: 64;
+    display: inline;
+    margin-right: 0;
+    margin-left: 15%;
   }
 
-  .about {
-    padding: 3%;
-    border-radius: 20px;
-    line-height: 2.7em;
-    background-color :#DADEDF;
-    animation: fadein 1.6s ease-in;
-    display: flex;
-    flex-direction: row;
+  #name {
+    font-size: 64;
+    display: inline;
+    margin-left: 0;
+    font-weight: medium;
+  }
+
+  #IAmA {
+    margin-top: 3%;
+    margin-bottom: 10%;
+  }
+
+  #IAm {
+    font-size: 36;
+    display: inline;
+    margin-right: 0;
+    margin-left: 15%;
+  }
+
+  #about {
+    background-color: #E5E5E5;
+    color: #29334D;
+  }
+
+  #aboutTitle {
+    padding-left: 12%;
+    padding-top: 5%;
+    font-size: 64;
   }
   
-  .duck {
-    max-width: 30%;
-    max-height: 30%;
-    display: block;
-    width: auto;
-    height: auto;
-    border-radius: 5%;
+  #aboutText {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 36;
+  }
+  
+  .aboutBox{
+    background-color: #BFCDBF;
+    height: 120px;
+    width: 400px;
+  }
+  
+  .aboutBox-1{
+    margin-top: -60px;
+  }
+  .aboutBox-2{
+    margin-top: -60px;
     float: right;
   }
 
-  .resume {
-    margin-top: 50px;
-    margin-bottom: 90px;
-    font-size: 24px;
-    animation: fadein 1.8s ease-in;
-  }
-  
-  /* Transition into Page 2*/
-  
-  #swoop1-svg {
-    transform: translateY(-2px);
-  }
-  
-  .swoop1 {
-    stroke: #FFFCF6;
-    fill: #FFFCF6;
-  }
-  
-  .page2 {
-    background-color: #034488;
-    height: 2400px;
-  }
-  
-  .experience_container {
-    color: #FFFCF6;
-    margin-left: 8%;
-  }
-  
-  .exp_title {
-    font-size: 48px;
-    padding-top: 150px;
-  }
-  
-  .exp_desc {
-    width: 40%;
-    margin-top: 30px;
-    line-height: 1.7em;
-    font-size: 24px;
-  }
-  
-  .exp_info {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .calhacks_logo {
-    max-width: 300px;
-  }
-  
-  .netdragon_logo {
-    max-width: 300px;
-  }
-  
-  .defhacks_logo {
-    max-width: 300px;
-  }
   
   
-  .expinfo1, .expinfo3{
-    margin-left: 40px;
-  }
-  
-  .expinfo2 {
-    margin-left: 0px;
-    width: 68%;
-  }
-  
-  .calhackstitle, .netdragontitle, .defhackstitle{
-    margin-top: 12px;
-    font-size: 40px;
-  }
-  
-  .calhacksdesc, .defhacksdesc{
-    margin-top: 24px;
-    font-size: 24px;
-    line-height: 1.7em;
-    width: 92%;
-  }
-  
-  .netdragondesc {
-    margin-top: 24px;
-    font-size: 24px;
-    line-height: 1.7em;
-    width: 92%;
-  }
-  
-  /* Page bottom */
-  
-  .moreabout {
-    margin-top: 200px;
-    color: #FFFCF6;
-    text-align: center;
-  }
-  
-  .back-to-top {
-    margin-top: 10px;
-    color: #FFFCF6;
-    text-align: center;
-  }
-  
-  .mobile {
-    margin-top: 100px;
-    color: #FFFCF6;
-    text-align: center;
-  }
-  
-  /* Highlighter + Effect inspired by emilyzhong.me ("Unclear")*/
-  
-  .underline {
-    text-decoration: underline;
-    color: inherit;
-  }
-  
-  a.highlighter {
-    text-decoration: none;
-    position: relative;
-    color: inherit;
-    display: inline-block;
-  }
-  
-  a.highlighter::after {
-    content: "";
-    opacity: 0.5;
-    background: #6A8EAE;
-    position: absolute;
-    display: inline-block;
-    height: 0.5em;
-    width: calc(100% + 4px);
-    left: 50%;
-    bottom: 0.2em;
-    transform: translateX(-50%);
-    z-index: -1;
-    transition: 0.3s;
-  }
-  
-  a.highlighter:hover:after {
-    height: 1.2em;
-  }
-  
-  
-  
-  a.highlighter2 {
-    text-decoration: none;
-    position: relative;
-    color: inherit;
-    display: inline-block;
-  }
-  
-  a.highlighter2::after {
-    content: "";
-    opacity: 0.5;
-    background: #FFFCF6;
-    display: inline-block;
-    height: 0.5em;
-    width: calc(100% + 4px);
-    left: 50%;
-    bottom: 0.2em;
-    transform: translateY(-80%);
-    z-index: -1;
-    transition: 0.3s;
-  }
-  
-  a.highlighter2:hover:after {
-    height: 1.4em;
-  }
-  
-  svg {
-    position: absolute;
-    left: 0;
-  }
   
   /* Keyframe Load */
   
