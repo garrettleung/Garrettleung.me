@@ -2,7 +2,6 @@ body {
     font-family: 'Noto Serif JP', serif;
     background-color: #29334D;
     color: #FFFBFB;
-    margin: 0px;
     font-weight: 200;
   }
   
@@ -83,7 +82,7 @@ body {
     margin-bottom: 15%;
     margin: auto;
     text-align: center;
-    padding-bottom: 15%;
+    padding-bottom: 100px;
   }
 
   #IAm {
@@ -95,6 +94,8 @@ body {
     background-color: #E5E5E5;
     color: #29334D;
     width: 100%;
+    position: relative;
+    z-index: 1;
   }
 
   #aboutTitle {
@@ -105,11 +106,29 @@ body {
   
   #aboutText {
     padding-top: 2%;
-    padding-bottom: 10%;
+    padding-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     font-size: 36;
+  }
+  .aboutBox{
+    background-color: #BFCDBF;
+    height: 14%;
+    width: 20%;
+    
+    position: relative;
+    z-index: 2;
+  }
+  
+  .aboutBox-1{
+    top: -7%;
+    z-index: 2;
+    position: relative;
+  }
+  .aboutBox-2{
+    top: -7%;
+    float: right;
   }
   
   #projects {
@@ -120,7 +139,7 @@ body {
 
   #projectsTitle {
     padding-left: 12%;
-    padding-top: 5%;
+    padding-top: 50px;
   }
   
   .projectBox {
@@ -128,7 +147,8 @@ body {
     width: 65%;
     z-index: 2;
     background-color: #FFFBFB;
-    margin-top: -400px;
+    margin-top: 70px;
+    position: relative;
   }
 
   .projectBox-right {
@@ -139,27 +159,16 @@ body {
     background-color: #BFCDBF;
     height: 46%;
     width: 68%;
-    margin-top: 5%;
+    top: 100%;
+    position: relative;
     z-index: 1;
   }
 
   .box-right{
+    top: 100%;
     float: right;
   }
 
-  .aboutBox{
-    background-color: #BFCDBF;
-    height: 120px;
-    width: 400px;
-  }
-  
-  .aboutBox-1{
-    margin-top: -60px;
-  }
-  .aboutBox-2{
-    margin-top: -60px;
-    float: right;
-  }
 
   .line{
     margin-top: 2%;
