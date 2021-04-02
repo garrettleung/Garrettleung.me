@@ -175,7 +175,7 @@ body {
   }
 
   /* Animated highligh by Will Taylor */
-  span {
+  span.highlight {
     background-image: linear-gradient(#BFCDBF, #BFCDBF);
     background-repeat: no-repeat;
     background-position: 0% 100%;
@@ -183,7 +183,7 @@ body {
     transition: background-size .5s, background-position .3s ease-in .5s;
   }
 
-  span:hover {
+  span.highlight:hover {
     background-size: 100% 100%;
     background-position: 0% 0%;
     transition: background-position .5s, background-size .3s ease-in .5s;
