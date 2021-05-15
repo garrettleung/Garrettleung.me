@@ -110,6 +110,7 @@ body {
     margin-right: auto;
     width: 80%;
     font-size: 28px;
+    color: #000000;
   }
   .aboutBox{
     background-color: #BFCDBF;
@@ -192,8 +193,12 @@ body {
     padding-top: 3%;
   }
   
-  .projectLinks {
-
+  #projectLinks {
+    position: absolute;
+    bottom: 0;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-size: 20px;
   }
 
   .box-right{
