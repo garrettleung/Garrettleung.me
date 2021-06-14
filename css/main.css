@@ -167,11 +167,16 @@ body {
   .projectText {
     height: 100%;
     width: 60%;
+    float: left;
   }
 
-  #projectPicture {
-    height: auto;
-    width: auto;
+  .projectPicture {
+    height: 80%;
+    width: 30%;
+    float: right;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   #projectTitle {
