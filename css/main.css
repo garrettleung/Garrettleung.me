@@ -143,8 +143,8 @@ body {
   }
   
   .projectRow {
-    width: 100%;
-    height: 48%;
+    width: 100vw;
+    height: calc(140vh - 40vw);
     margin-top: 10%;
     border-bottom: 10%;
   }
@@ -193,7 +193,7 @@ body {
   }
 
   #projectDescription {
-    font-size:0.9vw;
+    font-size:2vh;
     padding-left: 5%;
     padding-top: 0%;
   }
